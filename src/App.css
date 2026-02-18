@@ -10,7 +10,7 @@ html, body {
   min-height: 100%;
   background: var(--bg);
   font-family: 'Inter', -apple-system, sans-serif;
-  color: #000; /* ✅ TODO el texto en negro */
+  color: #000;
 }
 
 .page {
@@ -48,14 +48,13 @@ html, body {
   letter-spacing: 1px;
   margin-bottom: 8px;
   display: block;
-  color: #000; /* ✅ negro */
 }
 
 h1, h2 {
   margin: 0 0 16px 0;
   padding-bottom: 10px;
   border-bottom: 2px solid var(--border);
-  color: #000; /* ✅ negro */
+  color: #000;
 }
 
 h1 { font-size: 28px; margin-bottom: 24px; }
@@ -76,48 +75,17 @@ h2 { font-size: 20px; }
 .label {
   font-size: 14px;
   font-weight: 600;
-  color: #000; /* ✅ negro */
+  color: #000;
 }
 
 .value {
   font-size: 16px;
-  color: #000; /* ✅ negro */
+  color: #000;
   word-break: break-all;
   background: #f8fafc;
   padding: 8px;
   border-radius: 8px;
   border: 1px solid #f1f5f9;
-}
-
-.table {
-  margin-top: 16px;
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.table-head, .table-row {
-  display: grid;
-  grid-template-columns: 160px 1fr;
-  gap: 12px;
-  padding: 10px 12px;
-}
-
-.table-head {
-  background: #f8fafc;
-  font-weight: 700;
-  color: #000; /* ✅ negro */
-  border-bottom: 1px solid var(--border);
-}
-
-.table-row {
-  background: #fff;
-  border-bottom: 1px solid #f1f5f9;
-  color: #000; /* ✅ negro */
-}
-
-.table-row:last-child {
-  border-bottom: none;
 }
 
 .mono {
@@ -126,25 +94,143 @@ h2 { font-size: 20px; }
 }
 
 .empty {
-  color: #000; /* ✅ negro */
   background: #f8fafc;
   border: 1px solid var(--border);
   padding: 12px;
   border-radius: 10px;
   line-height: 1.4;
+  color: #000;
 }
 
+/* Jobs list */
+.jobs {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.job-item {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 14px;
+  background: #fff;
+}
+
+.job-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.job-title {
+  font-weight: 800;
+  font-size: 16px;
+  color: #000;
+}
+
+.job-id {
+  font-size: 13px;
+  color: #000;
+}
+
+.input-label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+}
+
+/* ✅ INPUT FIX: texto visible al pegar */
+.input {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: #fff;
+  font-size: 14px;
+  outline: none;
+
+  color: #000;
+  caret-color: #000;
+}
+
+/* ✅ Chrome/Edge: evita texto “invisible” */
+.input,
+.input:focus,
+.input:active {
+  -webkit-text-fill-color: #000;
+}
+
+.input::placeholder {
+  color: rgba(0,0,0,0.55);
+}
+
+.input:focus {
+  box-shadow: 0 0 0 3px rgba(0,0,0,0.08);
+}
+
+.btn {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #000;
+  background: #000;
+  color: #fff;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.alert {
+  margin-top: 10px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: #f8fafc;
+  font-size: 14px;
+  line-height: 1.3;
+  color: #000;
+}
+
+.alert.ok {
+  border-color: #16a34a;
+  background: #f0fdf4;
+}
+
+.alert.error {
+  border-color: #991b1b;
+  background: #fef2f2;
+}
+
+.hint {
+  margin-top: 14px;
+  font-size: 13px;
+  background: #f8fafc;
+  border: 1px dashed var(--border);
+  padding: 10px 12px;
+  border-radius: 10px;
+  color: #000;
+}
+
+/* Status */
 .status {
   min-height: 100vh;
   display: grid;
   place-items: center;
   padding: 24px;
-  color: #000; /* ✅ negro */
+  color: #000;
 }
 
-.status.error {
-  color: #991b1b;
-}
+.status.error { color: #991b1b; }
 
 .status-title {
   font-weight: 800;
@@ -155,5 +241,5 @@ h2 { font-size: 20px; }
 .status-text {
   max-width: 560px;
   text-align: center;
-  color: #000; /* ✅ negro */
+  color: #000;
 }

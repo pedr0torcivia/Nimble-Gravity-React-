@@ -1,16 +1,52 @@
-# React + Vite
+# Nimble Gravity - Junior Fullstack Developer Challenge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este repositorio contiene la resolución del "Bot Filter Challenge" propuesto por **Nimble Gravity**. La aplicación está construida con **React** y consume una API externa para gestionar la postulación de candidatos a distintas posiciones abiertas.
 
-Currently, two official plugins are available:
+## Tecnologías Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* **React 18**: Biblioteca principal para la interfaz de usuario.
+* **Vite**: Herramienta de construcción para un entorno de desarrollo rápido.
+* **CSS3**: Estilos personalizados con variables (Custom Properties) y diseño responsivo (Grid/Flexbox).
+* **Fetch API**: Para el consumo de los endpoints de la aplicación.
 
-## React Compiler
+## Funcionalidades del Challenge
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+El proyecto cumple con los 5 pasos requeridos:
 
-## Expanding the ESLint configuration
+1.  **Step 1**: Inicialización del repositorio y estructura base.
+2.  **Step 2**: Obtención de los datos del candidato (`uuid`, `candidateId`, etc.) mediante llamada `GET`.
+3.  **Step 3**: Listado dinámico de las posiciones de trabajo disponibles.
+4.  **Step 4**: Interfaz prolija con selección de posición y validación de datos.
+5.  **Step 5**: Envío de postulación mediante llamada `POST` incluyendo la URL de este repositorio.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Instalación y Ejecución
+
+Para correr este proyecto localmente, sigue estos pasos:
+
+1.  **Clonar el repositorio:**
+    ```bash
+    git clone [https://github.com/pedr0torcivia/Nimble-Gravity-React-.git](https://github.com/pedr0torcivia/Nimble-Gravity-React-.git)
+    ```
+
+2.  **Instalar dependencias:**
+    ```bash
+    cd Nimble-Gravity-React-
+    npm install
+    ```
+
+3.  **Iniciar el servidor de desarrollo:**
+    ```bash
+    npm run dev
+    ```
+
+4.  **Abrir en el navegador:**
+    Visita `http://localhost:5173` para interactuar con la aplicación.
+
+## Candidato
+
+* **Nombre:** Pedro Torcivia
+* **Email:** pedritorcivia@gmail.com
+* **Repositorio:** [Nimble-Gravity-React-](https://github.com/pedr0torcivia/Nimble-Gravity-React-.git)
+
+---
+Desarrollado como parte del proceso de selección de Nimble Gravity.
